@@ -13,7 +13,7 @@
     display:flex;
     flex-direction: column;
     padding:15px;
-    background-color: #f0e3ff;
+    background-color:#f0efef;
     width:250px;
     margin-bottom: 10px;
 }
@@ -25,7 +25,7 @@ button{
     padding:12px;
     border:0px;
     background-color:#222831;
-    color:#f0e3ff;
+    color:#f0efef;
     font-size: 20px;
     margin:4px;
 }
@@ -42,5 +42,48 @@ label{
     margin-top:2px;
     margin-bottom: 2px;
     padding:2px 4px 2px 4px;
-    color:white;
+    color:#f0efef;
 }
+.page-header{
+    position:fixed;
+    top:0px;
+    background-color: #f0efef;
+    width:100vw;
+    text-align: center;
+    margin:0;
+   
+}
+.header-title{
+    font-size: 30px;
+}
+.page-header img{
+    border-radius:50%;
+    float:left;
+    margin-left:200px;
+}
+.page-header span{
+    margin-right:250px;
+}
+
+@media only screen and (max-width: 600px) {
+    .page-header img{
+        margin-left:5px;
+    }
+    .page-header span{
+        margin-right:50px;
+    }
+    
+  }
+
+  @media only screen and (max-width: 350px) {
+    .page-header img{
+        margin-left:5px;
+        width:40px;
+        height:40px;
+    }
+    .page-header span{
+        font-size: 25px;
+        margin-right:50px;
+    }
+
+  }

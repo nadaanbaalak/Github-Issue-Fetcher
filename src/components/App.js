@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import Form from './form';
 import IssueList from './IssueList';
+import Heading from './header';
 class App extends React.Component{
     constructor()
     {
@@ -25,6 +26,7 @@ class App extends React.Component{
     render(){
         return (
             <div className='secondary-container'>
+                <Heading />
                 <Form onFetch={this.onFormSubmit}/>
                 <IssueList issueList={this.state.issues}/>
             </div>
